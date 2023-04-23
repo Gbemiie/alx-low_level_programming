@@ -9,14 +9,14 @@
 
 int main(void)
 {
-	char alph, x, y;
+	char alph, e, q;
 
-	x = 'x';
-	y = 'y';
+	e = 'e';
+	q = 'q';
 
 	for (alph = 'a'; alph <= 'z'; alph++)
 {
-	if (alph != x && alph != y)
+	if (alph != e && alph != q)
 		putchar(alph);
 }
 putchar('\n');
