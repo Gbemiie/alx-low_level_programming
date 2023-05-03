@@ -7,18 +7,18 @@
 void puts2(char *str)
 {
 int len = 0;
-int c = 0;
+int t = 0;
 char *v = str;
-int u;
+int o;
 while (*v != '\0')
 {
 v++;
 len++;
 }
-c = len - 1;
-for (u = 0; u <= c ; u++)
+t = len - 1;
+for (o = 0; o <= t ; o++)
 {
-if (u % 2 == 0)
+if (o % 2 == 0)
 {
 _putchar(str[0]);
 }
