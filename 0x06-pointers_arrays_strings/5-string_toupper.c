@@ -2,21 +2,21 @@
 
 /**
  * string_toupper - function changes all lowercase letter to uppercase
- * @n: Pointer
- * return: n
+ * @str: String
+ * Return: Pointer to the string
  */
 
-char *string_toupper(char *n)
+char *string_toupper(char *str)
 {
 int x;
 x = 0;
-while (n[x] != '\0')
+while (str[x] != '\0')
 {
-if (n[x] >= 'a' && n[x] <= 'z')
+if (str[x] >= 'a' && str[x] <= 'z')
 {
-n[x] = n[x] - 32;
+str[x] = str[x] - 32;
 }
 x++;
 }
-return (n);
+return (str);
 }
