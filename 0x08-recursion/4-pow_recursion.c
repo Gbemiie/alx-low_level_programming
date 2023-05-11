@@ -4,8 +4,10 @@
  * _pow_recursion - returns value of x raised to power of y
  * @x: int1
  * @y: int2
- * Return: 0 (correct) 
+ *
+ * Return: 0 (correct)
  */
+
 int _pow_recursion(int x, int y)
 {
 if (y < 0)
