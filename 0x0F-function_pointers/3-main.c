@@ -11,25 +11,25 @@
 int main(int _attribute_((_unused_)) argc, char *argv[])
 {
 int val1, val2;
-char *wrk;
+char *op;
 if (argc != 4)
 {
 printf("Error\n");
 exit(98);
 }
 val1 = atoi(argv[1]);
-wrk = argv[2];
+op = argv[2];
 val2 = atoi(argv[3]);
-if (get_wrk_func(wrk) == NULL || wrk[1] != '\0')
+if (get_op_func(op) == NULL || op[1] != '\0')
 {
 printf("Error\n");
 exit(99);
 }
-if ((*wrk == '/' && val2 == 0) || (*wrk == '%' && val2 == 0))
+if ((*op == '/' && val2 == 0) || (*op == '%' && val2 == 0))
 {
 printf("Error\n");
 exit(100);
 }
-printf("%d\n", get_wrk_func(wrk)(val1, val2));
+printf("%d\n", get_op_func(op)(val1, val2));
 return (0);
 }
